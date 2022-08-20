@@ -1,1 +1,1 @@
-Sitemap: https://fastpages.fast.ai/sitemap.xml
+Sitemap: https://t-dev-ccm.github.io/Fastpage-setup/sitemap.xml
