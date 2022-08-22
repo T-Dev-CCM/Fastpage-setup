@@ -13,8 +13,8 @@
   
     
         ,"post1": {
-            "title": "Title",
-            "content": ". print(&quot;Hello World!&quot;) . Hello World! .",
+            "title": "First Jupyter Notebook and Python Code. Hooray.",
+            "content": "print(&quot;Hello World!&quot;) . Hello World! .",
             "url": "https://t-dev-ccm.github.io/Fastpage-setup/2022/08/20/First-Notebook.html",
             "relUrl": "/2022/08/20/First-Notebook.html",
             "date": " • Aug 20, 2022"
