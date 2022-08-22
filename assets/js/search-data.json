@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Markdown",
-            "content": "toc: true layout: post description: My First Markdown Post! categories: [markdown] title: First Markdown Post . About Me . Favorite food is Lamb chops -I want to make a video game one day (Why I’m here) | I play Genshin Impact | .",
-            "url": "https://t-dev-ccm.github.io/Fastpage-setup/2022/08/22/Markdown.html",
-            "relUrl": "/2022/08/22/Markdown.html",
+            "title": "First Markdown Post",
+            "content": "About Me . Favorite food is Lamb chops -I want to make a video game one day (Why I’m here) | I play Genshin Impact | Kindness is everything…mostly | .",
+            "url": "https://t-dev-ccm.github.io/Fastpage-setup/markdown/2022/08/22/Markdown.html",
+            "relUrl": "/markdown/2022/08/22/Markdown.html",
             "date": " • Aug 22, 2022"
         }
         
