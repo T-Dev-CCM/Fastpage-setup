@@ -1,10 +1,9 @@
-<!doctype html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Lists, Dictionaries, Iteration | If you’re reading, I made a fastpage!</title>
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Lists, Dictionaries, Iteration" />
@@ -23,58 +22,56 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-29T00:00:00-05:00","datePublished":"2022-08-29T00:00:00-05:00","description":"An introduction to Data Abstraction using Python Lists [] and Python Dictionaries {}.","headline":"Lists, Dictionaries, Iteration","image":"https://t-dev-ccm.github.io/Fastpage-setup/images/python_lists.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://t-dev-ccm.github.io/Fastpage-setup/collegeboard/python_lists"},"url":"https://t-dev-ccm.github.io/Fastpage-setup/collegeboard/python_lists"}</script>
 <!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/Fastpage-setup/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://t-dev-ccm.github.io/Fastpage-setup/feed.xml" title="If you're reading, I made a fastpage!" /><link rel="shortcut icon" type="image/x-icon" href="/Fastpage-setup/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="/Fastpage-setup/assets/css/style.css?v=">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="/Fastpage-setup/assets/js/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="/Fastpage-setup/assets/css/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
 
-<!-- Setup theme-color -->
-<!-- start theme color meta headers -->
-<meta name="theme-color" content="#353535">
-<meta name="msapplication-navbutton-color" content="#353535">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<!-- end theme color meta headers -->
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
 
+  <div class="wrapper"><a class="site-title" rel="author" href="/Fastpage-setup/">If you&#39;re reading, I made a fastpage!</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
 
-<!-- Setup Google Analytics -->
-
-
-
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/Fastpage-setup/favicon.ico" -->
-
-<!-- end custom head snippets -->
-
-  </head>
-  <body>
-      <div id="header">
-        <nav>
-          <ul>
-            <li class="fork"><a href="">View On GitHub</a></li>
-            
-          </ul>
-        </nav>
-      </div><!-- end header -->
-
-    <div class="wrapper">
-
-      <section>
-        <div id="title">
-          <h1>If you're reading, I made a fastpage!</h1>
-          <p>A simple fastpage made by someone with little to no code experience :P</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href=""></a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
-        </div>
-
+        <div class="trigger"><a class="page-link" href="/Fastpage-setup/about/">About Me</a><a class="page-link" href="/Fastpage-setup/search/">Search</a><a class="page-link" href="/Fastpage-setup/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -84,7 +81,7 @@
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      7 min read
     
 </span></p>
 
@@ -168,7 +165,7 @@
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># variable of type string</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"What is the variable name/key?"</span><span class="p">,</span> <span class="s2">"value?"</span><span class="p">,</span> <span class="s2">"type?"</span><span class="p">,</span> <span class="s2">"primitive or collection, why?"</span><span class="p">)</span>
-<span class="n">name</span> <span class="o">=</span> <span class="s2">"John Doe"</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s2">"Trey Blalock"</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"name"</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
 
 <span class="nb">print</span><span class="p">()</span>
@@ -183,7 +180,7 @@
 
 <span class="c1"># variable of type float</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"What is the variable name/key?"</span><span class="p">,</span> <span class="s2">"value?"</span><span class="p">,</span> <span class="s2">"type?"</span><span class="p">,</span> <span class="s2">"primitive or collection, why?"</span><span class="p">)</span>
-<span class="n">score</span> <span class="o">=</span> <span class="mf">90.0</span>
+<span class="n">score</span> <span class="o">=</span> <span class="mf">94.7</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"score"</span><span class="p">,</span> <span class="n">score</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">score</span><span class="p">))</span>
 
 <span class="nb">print</span><span class="p">()</span>
@@ -191,15 +188,14 @@
 <span class="c1"># variable of type list (many values in one variable)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"What is variable name/key?"</span><span class="p">,</span> <span class="s2">"value?"</span><span class="p">,</span> <span class="s2">"type?"</span><span class="p">,</span> <span class="s2">"primitive or collection?"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"What is different about the list output?"</span><span class="p">)</span>
-<span class="n">langs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Python"</span><span class="p">,</span> <span class="s2">"JavaScript"</span><span class="p">,</span> <span class="s2">"Java"</span><span class="p">]</span>
+<span class="n">langs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Python"</span><span class="p">,</span> <span class="s2">"JavaScript"</span><span class="p">,</span> <span class="s2">"Java"</span><span class="p">,</span> <span class="s2">"Bash"</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">,</span> <span class="s2">"C#"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"langs"</span><span class="p">,</span> <span class="n">langs</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">langs</span><span class="p">),</span> <span class="s2">"length"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">langs</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"- langs[0]"</span><span class="p">,</span> <span class="n">langs</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">type</span><span class="p">(</span><span class="n">langs</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"- langs[4]"</span><span class="p">,</span> <span class="n">langs</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="nb">type</span><span class="p">(</span><span class="n">langs</span><span class="p">[</span><span class="mi">4</span><span class="p">]))</span>
 
 <span class="nb">print</span><span class="p">()</span>
 
 <span class="c1"># variable of type dictionary (a group of keys and values)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"What is the variable name/key?"</span><span class="p">,</span> <span class="s2">"value?"</span><span class="p">,</span> <span class="s2">"type?"</span><span class="p">,</span> <span class="s2">"primitive or collection, why?"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"What is different about the dictionary output?"</span><span class="p">)</span>
+
 <span class="n">person</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">"name"</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>
     <span class="s2">"age"</span><span class="p">:</span> <span class="n">age</span><span class="p">,</span>
@@ -211,6 +207,35 @@
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>What is the variable name/key? value? type? primitive or collection, why?
+name Trey Blalock &lt;class 'str'&gt;
+
+What is the variable name/key? value? type? primitive or collection, why?
+age 18 &lt;class 'int'&gt;
+
+What is the variable name/key? value? type? primitive or collection, why?
+score 94.7 &lt;class 'float'&gt;
+
+What is variable name/key? value? type? primitive or collection?
+What is different about the list output?
+langs ['Python', 'JavaScript', 'Java', 'Bash', 'C', 'C#'] &lt;class 'list'&gt; length 6
+- langs[4] C &lt;class 'str'&gt;
+
+person {'name': 'Trey Blalock', 'age': 18, 'score': 94.7, 'langs': ['Python', 'JavaScript', 'Java', 'Bash', 'C', 'C#']} &lt;class 'dict'&gt; length 4
+- person["name"] Trey Blalock &lt;class 'str'&gt;
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -253,23 +278,16 @@
 
 <span class="c1"># Append to List a Dictionary of key/values related to a person and cars</span>
 <span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"John"</span><span class="p">,</span>
-    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Mortensen"</span><span class="p">,</span>
-    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"October 21"</span><span class="p">,</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Trey"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Blalock"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"August 19"</span><span class="p">,</span>
     <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
-    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"jmortensen@powayusd.com"</span><span class="p">,</span>
-    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2015-Fusion"</span><span class="p">,</span> <span class="s2">"2011-Ranger"</span><span class="p">,</span> <span class="s2">"2003-Excursion"</span><span class="p">,</span> <span class="s2">"1997-F350"</span><span class="p">,</span> <span class="s2">"1969-Cadillac"</span><span class="p">]</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"greentrinket@gmail.com"</span><span class="p">,</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2013-Ford-Edge"</span><span class="p">],</span>
+    <span class="s2">"FavoriteCharacter"</span><span class="p">:</span> <span class="s2">"Qiqi"</span><span class="p">,</span> 
+    <span class="s2">"FavoriteNation"</span><span class="p">:</span> <span class="s2">"Sumeru"</span>
 <span class="p">})</span>
 
-<span class="c1"># Append to List a 2nd Dictionary of key/values</span>
-<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Sunny"</span><span class="p">,</span>
-    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Naidu"</span><span class="p">,</span>
-    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"August 2"</span><span class="p">,</span>
-    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"Temecula"</span><span class="p">,</span>
-    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"snaidu@powayusd.com"</span><span class="p">,</span>
-    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"4Runner"</span><span class="p">]</span>
-<span class="p">})</span>
 
 <span class="c1"># Print the data structure</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">)</span>
@@ -285,7 +303,7 @@
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[{'FirstName': 'John', 'LastName': 'Mortensen', 'DOB': 'October 21', 'Residence': 'San Diego', 'Email': 'jmortensen@powayusd.com', 'Owns_Cars': ['2015-Fusion', '2011-Ranger', '2003-Excursion', '1997-F350', '1969-Cadillac']}, {'FirstName': 'Sunny', 'LastName': 'Naidu', 'DOB': 'August 2', 'Residence': 'Temecula', 'Email': 'snaidu@powayusd.com', 'Owns_Cars': ['4Runner']}]
+<pre>[{'FirstName': 'Trey', 'LastName': 'Blalock', 'DOB': 'August 19', 'Residence': 'San Diego', 'Email': 'greentrinket@gmail.com', 'Owns_Cars': ['2013-Ford-Edge'], 'FavoriteCharacter': 'Qiqi', 'FavoriteNation': 'Sumeru'}]
 </pre>
 </div>
 </div>
@@ -327,6 +345,7 @@
     <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"FirstName"</span><span class="p">],</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"LastName"</span><span class="p">])</span>  <span class="c1"># using comma puts space between values</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Residence:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Residence"</span><span class="p">])</span> <span class="c1"># \t is a tab indent</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Birth Day:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"DOB"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"FavoriteNation:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"FavoriteNation"</span><span class="p">])</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Cars: "</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>  <span class="c1"># end="" make sure no return occurs</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"Owns_Cars"</span><span class="p">]))</span>  <span class="c1"># join allows printing a string list with separator</span>
     <span class="nb">print</span><span class="p">()</span>
@@ -353,15 +372,11 @@
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>For loop output
 
-John Mortensen
+Trey Blalock
 	 Residence: San Diego
-	 Birth Day: October 21
-	 Cars: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
-
-Sunny Naidu
-	 Residence: Temecula
-	 Birth Day: August 2
-	 Cars: 4Runner
+	 Birth Day: August 19
+	 FavoriteNation: Sumeru
+	 Cars: 2013-Ford-Edge
 
 </pre>
 </div>
@@ -419,10 +434,10 @@ Sunny Naidu
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>While loop output
 
-John Mortensen
+Trey Blalock
 	 Residence: San Diego
-	 Birth Day: October 21
-	 Cars: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+	 Birth Day: August 19
+	 Cars: 2013-Ford-Edge
 
 Sunny Naidu
 	 Residence: Temecula
@@ -478,6 +493,31 @@ Sunny Naidu
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Recursive loop output
+
+Trey Blalock
+	 Residence: San Diego
+	 Birth Day: August 19
+	 Cars: 2013-Ford-Edge
+
+Sunny Naidu
+	 Residence: Temecula
+	 Birth Day: August 2
+	 Cars: 4Runner
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -509,9 +549,33 @@ Sunny Naidu
   </div><a class="u-url" href="/Fastpage-setup/collegeboard/python_lists" hidden></a>
 </article>
 
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/Fastpage-setup/"></data>
 
-      </section>
+  <div class="wrapper">
 
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/Fastpage-setup/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/Fastpage-setup/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>A simple fastpage made by someone with little to no code experience :P</p>
+      </div>
     </div>
-  </body>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/T-Dev-CCM" target="_blank" title="T-Dev-CCM"><svg class="svg-icon grey"><use xlink:href="/Fastpage-setup/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/Don%27t+have+one" target="_blank" title="Don&#39;t have one"><svg class="svg-icon grey"><use xlink:href="/Fastpage-setup/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
 </html>
