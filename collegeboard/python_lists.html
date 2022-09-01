@@ -281,13 +281,25 @@ person {'name': 'Trey Blalock', 'age': 18, 'score': 94.7, 'langs': ['Python', 'J
     <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Trey"</span><span class="p">,</span>
     <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Blalock"</span><span class="p">,</span>
     <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"August 19"</span><span class="p">,</span>
-    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
-    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"greentrinket@gmail.com"</span><span class="p">,</span>
+    <span class="s2">"FavoriteColor"</span><span class="p">:</span> <span class="s2">"Pink"</span><span class="p">,</span>
+    <span class="s2">"FavoriteBook"</span><span class="p">:</span> <span class="s2">"Forgive Me Leonard Peacock"</span><span class="p">,</span>
     <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2013-Ford-Edge"</span><span class="p">],</span>
-    <span class="s2">"FavoriteCharacter"</span><span class="p">:</span> <span class="s2">"Qiqi"</span><span class="p">,</span> 
-    <span class="s2">"FavoriteNation"</span><span class="p">:</span> <span class="s2">"Sumeru"</span>
+   
+    
 <span class="p">})</span>
 
+<span class="c1"># Append to List a 2nd Dictionary of key/values</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Kaylee"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Hou"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"October 30"</span><span class="p">,</span>
+    <span class="s2">"FavoriteColor"</span><span class="p">:</span> <span class="s2">"Purple"</span><span class="p">,</span>
+    <span class="s2">"FavoriteBook"</span><span class="p">:</span> <span class="s2">"snaidu@powayusd.com"</span><span class="p">,</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"4Runner"</span><span class="p">]</span>
+<span class="p">})</span>
+
+<span class="c1"># Print the data structure</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">)</span>
 
 <span class="c1"># Print the data structure</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">)</span>
@@ -303,7 +315,8 @@ person {'name': 'Trey Blalock', 'age': 18, 'score': 94.7, 'langs': ['Python', 'J
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[{'FirstName': 'Trey', 'LastName': 'Blalock', 'DOB': 'August 19', 'Residence': 'San Diego', 'Email': 'greentrinket@gmail.com', 'Owns_Cars': ['2013-Ford-Edge'], 'FavoriteCharacter': 'Qiqi', 'FavoriteNation': 'Sumeru'}]
+<pre>[{'FirstName': 'Trey', 'LastName': 'Blalock', 'DOB': 'August 19', 'FavoriteColor': 'Pink', 'FavoriteBook': 'Forgive Me Leonard Peacock', 'Owns_Cars': ['2013-Ford-Edge']}, {'FirstName': 'Kaylee', 'LastName': 'Hou', 'DOB': 'October 30', 'FavoriteColor': 'Purple', 'FavoriteBook': 'snaidu@powayusd.com', 'Owns_Cars': ['4Runner']}]
+[{'FirstName': 'Trey', 'LastName': 'Blalock', 'DOB': 'August 19', 'FavoriteColor': 'Pink', 'FavoriteBook': 'Forgive Me Leonard Peacock', 'Owns_Cars': ['2013-Ford-Edge']}, {'FirstName': 'Kaylee', 'LastName': 'Hou', 'DOB': 'October 30', 'FavoriteColor': 'Purple', 'FavoriteBook': 'snaidu@powayusd.com', 'Owns_Cars': ['4Runner']}]
 </pre>
 </div>
 </div>
@@ -343,9 +356,9 @@ person {'name': 'Trey Blalock', 'age': 18, 'score': 94.7, 'langs': ['Python', 'J
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print function: given a dictionary of InfoDb content</span>
 <span class="k">def</span> <span class="nf">print_data</span><span class="p">(</span><span class="n">d_rec</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"FirstName"</span><span class="p">],</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"LastName"</span><span class="p">])</span>  <span class="c1"># using comma puts space between values</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Residence:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Residence"</span><span class="p">])</span> <span class="c1"># \t is a tab indent</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"FavoriteColor:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"FavoriteColor"</span><span class="p">])</span> <span class="c1"># \t is a tab indent</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Birth Day:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"DOB"</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"FavoriteNation:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"FavoriteNation"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"FavoriteBook:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"FavoriteBook"</span><span class="p">])</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Cars: "</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>  <span class="c1"># end="" make sure no return occurs</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"Owns_Cars"</span><span class="p">]))</span>  <span class="c1"># join allows printing a string list with separator</span>
     <span class="nb">print</span><span class="p">()</span>
@@ -373,10 +386,16 @@ person {'name': 'Trey Blalock', 'age': 18, 'score': 94.7, 'langs': ['Python', 'J
 <pre>For loop output
 
 Trey Blalock
-	 Residence: San Diego
+	 FavoriteColor: Pink
 	 Birth Day: August 19
-	 FavoriteNation: Sumeru
+	 FavoriteBook: Forgive Me Leonard Peacock
 	 Cars: 2013-Ford-Edge
+
+Kaylee Hou
+	 FavoriteColor: Purple
+	 Birth Day: October 30
+	 FavoriteBook: snaidu@powayusd.com
+	 Cars: 4Runner
 
 </pre>
 </div>
