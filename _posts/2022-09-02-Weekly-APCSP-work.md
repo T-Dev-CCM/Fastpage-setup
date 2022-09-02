@@ -1,0 +1,3 @@
+|     Week 1      |     Week 2    |    Week 3    |
+| Installing tools| Bash, Python  | Lists, HTML  |
+
