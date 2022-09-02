@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Weekly Apcsp Work",
-            "content": "First Header Second Header . Content Cell | Content Cell | . Content Cell | Content Cell | .",
+            "content": "toc: true layout: post comments: true description: A table made to show my APCSP progress categories: [markdown] title: Class Table — . First Header Second Header . Content Cell | Content Cell | . Content Cell | Content Cell | .",
             "url": "https://t-dev-ccm.github.io/Fastpage-setup/2022/09/02/Weekly-APCSP-work.html",
             "relUrl": "/2022/09/02/Weekly-APCSP-work.html",
             "date": " • Sep 2, 2022"
