@@ -1,9 +1,10 @@
 ---
 toc: true
 layout: post
-description: Week 1's work
+comments: true
+description: A minimal example of using markdown with fastpages.
 categories: [markdown]
-title: Week ! Review Ticket
+title: Review Ticket
 ---
 
 
