@@ -1,3 +1,11 @@
+---
+toc: true
+layout: post
+description: Week 1's work
+categories: [markdown]
+title: Week ! Review Ticket
+---
+
 ## Week 1 Review Ticket 
 
 - This week we were not only responsible for making our own Review Ticket, but now we are responsible for grading our partners' review tickets as well. Since I'm in a trio, I'll grade and show for 2 people's review tickets, but first I'll show my Review Ticket first. 
