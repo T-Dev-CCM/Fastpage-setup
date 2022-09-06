@@ -12,4 +12,12 @@ title: Review Ticket
 
 - This week we were given tasks to reflect what we learned from HTML, Lists, Dictionaries, and also reflecting from using searches and tags
 
--Lists and dictionaries usage:
+-Lists and dictionaries usage:https://t-dev-ccm.github.io/Fastpage-setup/2022/08/30/Lists.html 
+
+-Time fragments via a weekly table: https://t-dev-ccm.github.io/Fastpage-setup/_pages/APCSP.html 
+
+-Markdown Tags: https://t-dev-ccm.github.io/Fastpage-setup/categories/
+
+-Search:https://t-dev-ccm.github.io/Fastpage-setup/search/ 
+
+-Theming Fastpages:Screenshot (138).png
