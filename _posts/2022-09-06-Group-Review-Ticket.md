@@ -20,4 +20,4 @@ title: Review Ticket
 
 -Search:https://t-dev-ccm.github.io/Fastpage-setup/search/ 
 
--Theming Fastpages:Screenshot (138).png
+-Theming Fastpages:https://i.postimg.cc/mk9VdW5x/Screenshot-138.png
