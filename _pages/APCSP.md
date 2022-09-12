@@ -7,7 +7,7 @@ categories: [markdown]
 title: Weekly Review
 ---
 
-| Week 1  | Week 2 |
-| ------------- | ------------- |
-| Tool Setup  | Python Anatomy  |
-| Downloading python  | Productive blogging  |
+| Week 1  | Week 2 | Week 3 |
+| ------------- | ------------- | ------------- |
+| Tool Setup  | Python Anatomy  | Applab design |
+| Downloading python  | Productive blogging  | Creative Task |
