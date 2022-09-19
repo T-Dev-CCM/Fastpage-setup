@@ -24,3 +24,7 @@ title: Laurie Santos Lecture Notes
 - 40:01-50:00: Be in the present, and live the moment. Be wealthy, but not in terms of money, but time. Even those who spend money to make time are happier, but if you prioritize money over time, it won't get you anywhere. College students don't throw parties that much due to how busy they are.
 
 - 50:01-58:02: Older people are happier. Students think that parents have certain guidelines ("You need good grades")
+
+# Main Takeaway 
+
+- My Main takeaway from this lecture is that there are a lot of people who are stressed in life and don't feel happy or the need to function. But what I learned is that in order to be happy, you not only do the things you enjoy, but be grateful for what makes you happy, and you spend more towards that gratitude, with spending time with the people you love
