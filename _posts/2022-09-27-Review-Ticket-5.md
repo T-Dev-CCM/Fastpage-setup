@@ -9,8 +9,10 @@ title: Review Ticket 5
 
 - This week we were prompted to customize our servers, and make a project using scrum with our table group 
 
-- Flask customization: https://ibb.co/G7XS3st
+- Flask customization: 
+![](https://github.com/T-Dev-CCM/Fastpage-setup/blob/master/images/Screenshot%20(160).png?raw=true)
 
-- Stub Body: https://ibb.co/4Kf4RKy 
+- Stub Body: 
+![](https://github.com/T-Dev-CCM/Fastpage-setup/blob/master/images/Screenshot%20(161).png?raw=true)
 
 - Scrum board: https://kayleehou.github.io/myproject/scrum/2022/09/25/scrumprocess.html
