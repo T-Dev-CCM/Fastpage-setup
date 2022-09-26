@@ -11,4 +11,6 @@ title: Review Ticket 5
 
 - Flask customization: https://ibb.co/G7XS3st
 
-- Stub Body: https://ibb.co/4Kf4RKy
+- Stub Body: https://ibb.co/4Kf4RKy 
+
+- Scrum board: https://kayleehou.github.io/myproject/scrum/2022/09/25/scrumprocess.html
