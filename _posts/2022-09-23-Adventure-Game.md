@@ -1,6 +1,6 @@
 ---
 keywords: fastai
-title: Title
+title: Curse of the Python
 nb_path: _notebooks/2022-09-23-Adventure-Game.ipynb
 layout: notebook
 ---
@@ -14,6 +14,23 @@ layout: notebook
 
 <div class="container" id="notebook-container">
         
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -35,6 +52,7 @@ layout: notebook
 
 
 
+
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;Y&quot;</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Very Well...&quot;</span><span class="p">)</span> 
     <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">&quot;Press Enter to Continue&quot;</span><span class="p">)</span>
@@ -53,6 +71,9 @@ layout: notebook
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You go through the room behind the wooden door, the creaking only being absorbed by the emptiness within it...except for some writing on the wall. Read it?&quot;</span><span class="p">)</span> 
     <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span> <span class="p">(</span><span class="s2">&quot;Read? or Don&#39;t?&quot;</span><span class="p">)</span>
 
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;Don&#39;t&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Really? what else will you do?&quot;</span><span class="p">)</span>
+
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;Read&quot;</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The text reads: &#39;I sing but never talk, Always run but don&#39;t walk, I have hands, but no arms, and a face, but no head&#39;&quot;</span><span class="p">)</span>
     <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span> <span class="p">(</span><span class="s2">&quot;What could the answer be?&quot;</span><span class="p">)</span>
@@ -64,6 +85,9 @@ layout: notebook
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> 
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;As you push your weight against the door, it slowly creaks open as you stumble into the dimly lit room it holds. As you make your way in, you see a snake stuck in a cage with the key outside. The snake looks like it wants you to free it&quot;</span><span class="p">)</span>
     <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span> <span class="p">(</span><span class="s2">&quot;Free? or Leave?&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;Leave&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sensing your abandonment, the snake then spews venom at you, causing you to&quot;</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;Free&quot;</span><span class="p">:</span> 
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The snake sees your moral kindness as you free it from the cage, and as it slithers away through a crevice, the room begins to shake as the stone walls open revealing the outside world.&quot;</span><span class="p">)</span>
