@@ -15,4 +15,6 @@ title: Review Ticket 5
 - Stub Body: 
 ![](https://github.com/T-Dev-CCM/Fastpage-setup/blob/master/images/Screenshot%20(161).png?raw=true)
 
-- Scrum board: https://kayleehou.github.io/myproject/scrum/2022/09/25/scrumprocess.html
+- Scrum board: https://kayleehou.github.io/myproject/scrum/2022/09/25/scrumprocess.html 
+
+- Javaascript: https://t-dev-ccm.github.io/Fastpage-setup/techtalk/javascript
