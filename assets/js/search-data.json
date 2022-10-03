@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Review Ticket 6",
-            "content": "This week we were taught how to deploy via the use of aws . -Ap Collegeboard: https://github.com/T-Dev-CCM/Fastpage-setup/blob/master/images/Screenshot%20(180).png?raw=true . -AWS instance: https://us-east-2.console.aws.amazon.com/ec2-instance-connect/ssh?connType=standard&amp;instanceId=i-02475aae2d4ecf8d8&amp;osUser=ubuntu&amp;region=us-east-2&amp;sshPort=22#/ .",
+            "content": "This week we were taught how to deploy via the use of aws . -Ap Collegeboard: . -AWS instance: https://us-east-2.console.aws.amazon.com/ec2-instance-connect/ssh?connType=standard&amp;instanceId=i-02475aae2d4ecf8d8&amp;osUser=ubuntu&amp;region=us-east-2&amp;sshPort=22#/ .",
             "url": "https://t-dev-ccm.github.io/Fastpage-setup/markdown/2022/09/30/Review-Ticket-6.html",
             "relUrl": "/markdown/2022/09/30/Review-Ticket-6.html",
             "date": " • Sep 30, 2022"
