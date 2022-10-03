@@ -4,7 +4,7 @@ layout: post
 comments: true
 description: AWS deployment and Multiple choice AP prep
 categories: [markdown]
-title: Review Ticket 5
+title: Review Ticket 6
 --- 
 
 # This week we were taught how to deploy via the use of aws 
