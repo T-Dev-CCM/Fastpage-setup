@@ -11,9 +11,8 @@ title: Review Ticket 6
 
 - Ap Collegeboard: ![](https://github.com/T-Dev-CCM/Fastpage-setup/blob/master/images/Screenshot%20(180).png?raw=true)
 
+- AWS docker compose: ![](https://github.com/T-Dev-CCM/Fastpage-setup/blob/master/images/Screenshot%20(184).png?raw=true)
 
-- For my aws instance, I did the best I could, but I was unable to figure out how to get the inputs to yield an optimal output, so therefore this is the best I have
+- AWS instance curl : ![](https://github.com/T-Dev-CCM/Fastpage-setup/blob/master/images/Screenshot%20(183).png?raw=true)
 
-- AWS instance: ![](https://github.com/T-Dev-CCM/Fastpage-setup/blob/master/images/Screenshot%20(182).png?raw=true)
-
- 
+ - AWS browser instance : ![](https://github.com/T-Dev-CCM/Fastpage-setup/blob/master/images/Screenshot%20(185).png?raw=true)
