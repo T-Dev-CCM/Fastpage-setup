@@ -12,4 +12,6 @@ title: Review Ticket 7
 
 - CollegeBoard: https://t-dev-ccm.github.io/Fastpage-setup/markdown/2022/10/09/Error-Testing.html
 
-- Group Project: https://t-dev-ccm.github.io/Fastpage-setup/markdown/2022/10/07/Project-Program-Design.html
+- Group Project Program Design: https://t-dev-ccm.github.io/Fastpage-setup/markdown/2022/10/07/Project-Program-Design.html 
+
+- Error Testing: https://t-dev-ccm.github.io/Fastpage-setup/collegeboard/error
