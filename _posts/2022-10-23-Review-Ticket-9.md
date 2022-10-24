@@ -12,4 +12,4 @@ title: Review Ticket 9
 
 - Group Video: https://youtu.be/9DSGgvmEBmg
 
-- Cloning Our Repository: https://github.com/T-Dev-CCM/Fastpage-setup/blob/master/images/Screenshot%20(226).png?raw=true
+- Cloning Our Repository: ![](https://github.com/T-Dev-CCM/Fastpage-setup/blob/master/images/Screenshot%20(226).png?raw=true)
