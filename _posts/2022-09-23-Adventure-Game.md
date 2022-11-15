@@ -14,23 +14,15 @@ layout: notebook
 
 <div class="container" id="notebook-container">
         
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>This is the inner workings and program purpose for the adventure game. The purpose of this program is to provide whoever plays this micro adventure game a choice of paths, and with different outputs for every input you choose. It uses mostly print, question with response, and if rsp to function, relying on the player to choose one of the provided options printed</li>
+</ul>
 
 </div>
-    {% endraw %}
-
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -52,7 +44,6 @@ layout: notebook
 
 
 
-
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;Y&quot;</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Very Well...&quot;</span><span class="p">)</span> 
     <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">&quot;Press Enter to Continue&quot;</span><span class="p">)</span>
@@ -60,9 +51,6 @@ layout: notebook
 
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;N&quot;</span><span class="p">:</span> 
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Perhaps another time then...&quot;</span><span class="p">)</span>
-
-<span class="k">else</span><span class="p">:</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sorry, I didn&#39;t get that, look at your choices and try again&quot;</span><span class="p">)</span>
 
 <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">&quot;You wake up on the stone floor in a temple, as you drearily make your way to your feet, you see a python insignia staring at you, there are 3 doors, one made of wood, one made of rusty metal, and one with a skull painted on it. Which do you choose?&quot;</span><span class="p">)</span>
 
@@ -73,6 +61,7 @@ layout: notebook
 
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;Don&#39;t&quot;</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Really? what else will you do?&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You got the Dead-end ending&quot;</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;Read&quot;</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The text reads: &#39;I sing but never talk, Always run but don&#39;t walk, I have hands, but no arms, and a face, but no head&#39;&quot;</span><span class="p">)</span>
@@ -80,7 +69,7 @@ layout: notebook
 
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;Clock&quot;</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;As you mutter the answer to yourself, you hear a little crumble, and as you say it again, the walls move slightly, showing the outside world. Then as you yell it one more time, the walls open completely, and you run outside&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You got the intellect ending&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You got the Intellect ending&quot;</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;Metal&quot;</span><span class="p">:</span> 
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;As you push your weight against the door, it slowly creaks open as you stumble into the dimly lit room it holds. As you make your way in, you see a snake stuck in a cage with the key outside. The snake looks like it wants you to free it&quot;</span><span class="p">)</span>
@@ -109,21 +98,41 @@ layout: notebook
 </div>
 </div>
 
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">InfoDb</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+
+<span class="s2">&quot;Hello&quot;</span>
+
+
+
+
+<span class="p">})</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 <div class="output_wrapper">
 <div class="output">
 
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Hello, User
-Welcome to Curse of The Python, where your inputs will forge the output on your quest to escape
-Are you ready to embark on your adventure? Type Y or N
-Sorry, I didn&#39;t get that, look at your choices and try again
-You wake up on the stone floor in a temple, as you drearily make your way to your feet, you see a python insignia staring at you, there are 3 doors, one made of wood, one made of rusty metal, and one with a skull painted on it. Which do you choose?
-You go through the room behind the wooden door, the creaking only being absorbed by the emptiness within it...except for some writing on the wall. Read it?
-Read? or Don&#39;t?
-The text reads: &#39;I sing but never talk, Always run but don&#39;t walk, I have hands, but no arms, and a face, but no head&#39;
-What could the answer be?
+<pre>[{&#39;Hello&#39;}]
 </pre>
 </div>
 </div>
