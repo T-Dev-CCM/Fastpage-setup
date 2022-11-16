@@ -38,9 +38,10 @@ baseurl: "/Fastpage-setup" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
-  social_links:
-    twitter: Don't have one 
-    github: T-Dev-CCM
+ skin: dark
+  
+social_links:
+- { platform: github, user_url: ”https://github.com/T-Dev-CCM/Fastpage-setup"}
 
 # Set this to true to get LaTeX math equation support
 use_math: 
