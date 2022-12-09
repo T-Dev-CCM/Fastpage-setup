@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -330,14 +330,34 @@ MOVE_FORWARD()</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">procedure</span><span class="p">()</span>
-    <span class="c1"># code goes here</span>
-    <span class="k">return</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sanity</span> <span class="p">(</span><span class="n">braincells</span><span class="p">):</span> 
+    <span class="n">APCSPhw</span> <span class="o">=</span> <span class="n">braincells</span> <span class="o">-</span> <span class="mi">100</span> 
+    <span class="n">APCSPhw</span> <span class="o">=</span> <span class="n">APCSPhw</span> <span class="o">*</span> <span class="mi">100</span>
+    
+    <span class="k">return</span> <span class="n">APCSPhw</span> 
 
+<span class="n">mentalinsanity</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"How much APCSP homework was assigned?"</span><span class="p">)</span>
+<span class="n">mentalinsanity</span> <span class="o">=</span> <span class="p">(</span><span class="n">sanity</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">mentalinsanity</span><span class="p">)))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">mentalinsanity</span><span class="p">,</span> <span class="s2">"brain cells lost"</span><span class="p">)</span>
 <span class="c1"># code goes here</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>-5500 brain cells lost
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
