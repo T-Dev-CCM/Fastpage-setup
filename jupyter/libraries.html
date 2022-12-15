@@ -394,7 +394,7 @@ PROCEDURE Dice(n)
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>4</pre>
+<pre>2</pre>
 </div>
 
 </div>
@@ -519,7 +519,7 @@ PROCEDURE Dice(n)
 <span class="k">def</span> <span class="nf">find_derivative</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">):</span>
   <span class="n">smth</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">13</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 
-  <span class="n">derivative</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyder</span><span class="p">(</span><span class="n">poly</span><span class="p">)</span>
+  <span class="n">derivative</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyder</span><span class="p">(</span><span class="n">smth</span><span class="p">)</span>
 
   <span class="n">answer</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyval</span><span class="p">(</span><span class="n">derivative</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
 
@@ -529,6 +529,20 @@ PROCEDURE Dice(n)
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>37980
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
