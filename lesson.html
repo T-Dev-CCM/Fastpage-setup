@@ -175,12 +175,12 @@ window.onload = wrap_img;
 </h3>
 <ul>
 <li>The ability of an algorithm to solve a problem in an efficient way<ul>
-<li>An efficient algorithm solves a problem <strong>___</strong> and with a <strong><strong><strong>_</strong></strong></strong>, such as time and memory.</li>
+<li>An efficient algorithm solves a problem quickily and with a minimal amount of resources, such as time and memory.</li>
 </ul>
 </li>
 <li>How do we determine if an algorithm is efficient or not?<ul>
-<li>One way we can do this is by determining the <strong><strong>_</strong></strong> of the algorithm.</li>
-<li>Another way is through <strong><strong>_</strong></strong>. </li>
+<li>One way we can do this is by determining the time complexity of the algorithm.</li>
+<li>Another way is through space complexity. </li>
 </ul>
 </li>
 </ul>
@@ -196,7 +196,7 @@ window.onload = wrap_img;
 </h2>
 <p>What did you and your team discuss? (record below)</p>
 <ul>
-<li>An <strong><em>__</em></strong> solution is <strong><strong><strong><strong>__</strong></strong></strong></strong> that produces a solution that isn't necessarily <strong>_</strong> but can be used when normal methods take forever </li>
+<li>An heuristic solution is an approach to a problem that produces a solution that isn't necessarily optimal but can be used when normal methods take forever </li>
 </ul>
 <p>Describe the method used to solve the traveling merchant problem. (record below)</p>
 
@@ -227,8 +227,8 @@ There are two types of decision problems that Collegeboard goes over:</p>
 <li>Decidable Problems</li>
 <li>Undecidable Problems</li>
 </ul>
-<p>A <strong><em>__</em></strong> is a problem in computer science and mathematics for which an algorithm can be created that can always produce a correct answer or solution. In other words, a decidable problem is a problem for which there exists an algorithm that can be used to determine whether a given input is a valid solution or not.</p>
-<p>An <strong><em>__</em></strong> problem is a problem in computer science and mathematics for which it is impossible to create an algorithm that can always provide a correct answer or solution. This means that it is not possible for an algorithm to always determine whether a given input is a valid solution to an undecidable problem.</p>
+<p>A DECIDABLE is a problem in computer science and mathematics for which an algorithm can be created that can always produce a correct answer or solution. In other words, a decidable problem is a problem for which there exists an algorithm that can be used to determine whether a given input is a valid solution or not.</p>
+<p>An UNDECIDABLE problem is a problem in computer science and mathematics for which it is impossible to create an algorithm that can always provide a correct answer or solution. This means that it is not possible for an algorithm to always determine whether a given input is a valid solution to an undecidable problem.</p>
 </blockquote>
 
 </div>
@@ -351,9 +351,9 @@ False
 <h3 id="The-Halting-Problem">
 <a class="anchor" href="#The-Halting-Problem" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Halting Problem<a class="anchor-link" href="#The-Halting-Problem"> </a>
 </h3>
-<p>The halting problem is an example of an <strong><em>__</em></strong>. It states that it is not always possible to correctly determine whether a code halts or runs forever.</p>
+<p>The halting problem is an example of an undecidable problem. It states that it is not always possible to correctly determine whether a code halts or runs forever.</p>
 <blockquote>
-<p>There is <strong><em>__</em></strong> to write an algorithm to analyze and determine whether a body of code can run forever or not.</p>
+<p>There is no way to write an algorithm to analyze and determine whether a body of code can run forever or not.</p>
 </blockquote>
 
 </div>
@@ -368,8 +368,8 @@ False
 <ul>
 <li>In order to understand this, suppose that an algorithm was able to analyze whether a code halts or not. Let's call this algorithm <code>HaltChecker</code>.</li>
 <li>
-<code>HaltChecker</code> analyzes the program,<code>program P</code>, and its input,<code>input I</code>. If <code>program P</code> halts with <code>input I</code>, <code>HaltChecker</code> returns an output of "halts". If <code>program P</code> doesn't halt(runs forever) with <code>input I</code>, <code>HaltChecker</code> returns an output of "never". For example, in the code where it tests if variable <strong>number</strong>, the <strong><em>__</em></strong>, so <code>HaltChecker</code> returns an output of <strong><em>__</em></strong>.</li>
-<li>Then, we add another algorithm called <code>Reverser</code> which reverses <code>HaltChecker</code>'s output. So, if "never" is the output of <code>HaltChecker</code>, then the output of <code>Reverser</code> is <strong><em>__</em></strong>. It's also the same the other way around: if <code>HaltChecker</code> has an output of "halts", then <code>Reverser</code> has an output of <strong><em>__</em></strong>.</li>
+<code>HaltChecker</code> analyzes the program,<code>program P</code>, and its input,<code>input I</code>. If <code>program P</code> halts with <code>input I</code>, <code>HaltChecker</code> returns an output of "halts". If <code>program P</code> doesn't halt(runs forever) with <code>input I</code>, <code>HaltChecker</code> returns an output of "never". For example, in the code where it tests if variable <strong>number</strong>, the code runs forever, so <code>HaltChecker</code> returns an output of never.</li>
+<li>Then, we add another algorithm called <code>Reverser</code> which reverses <code>HaltChecker</code>'s output. So, if "never" is the output of <code>HaltChecker</code>, then the output of <code>Reverser</code> is halt. It's also the same the other way around: if <code>HaltChecker</code> has an output of "halts", then <code>Reverser</code> has an output of never.</li>
 <li>We combine these algorithms into one entire body of code.</li>
 <li><strong>Since <code>Reverser</code> is the algorithm at the end, hence giving the ultimate output, notice how it prints "never" when in fact there is an end(As proved by <code>HaltChecker</code>), and how it also prints "halts" when there is in fact is no end to the code(Also proved by <code>HaltChecker</code>). As a result, <code>HaltChecker</code> is inaccurate and this is an undecidable problem.</strong></li>
 </ul>
@@ -412,6 +412,7 @@ False
 <a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
 </h2>
 <p>Come up with one situation in which a computer runs into an undecidable problem. Explain why it is considered an undecidable problem.</p>
+<p>My answer: If a function keeps looping on its own requirements in an equation (For example, the 3x + 1 rule/Collatz Conjecture)</p>
 
 </div>
 </div>
@@ -435,45 +436,15 @@ False
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
-
-<span class="k">def</span> <span class="nf">linear_search</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
-    <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">perf_counter_ns</span><span class="p">()</span> <span class="c1"># records time (nanoseconds)</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)):</span> <span class="c1"># loops through the entire list </span>
-
-        <span class="k">if</span> <span class="n">lst</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">x</span><span class="p">:</span> <span class="c1"># until the x value we are looking for is found</span>
-            <span class="n">end_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">perf_counter_ns</span><span class="p">()</span> <span class="c1"># records time again</span>
-            <span class="n">total_time</span> <span class="o">=</span> <span class="p">(</span><span class="n">end_time</span> <span class="o">-</span> <span class="n">start_time</span><span class="p">)</span> <span class="o">//</span> <span class="mi">1000</span> <span class="c1"># subtracts last recorded time and first recorded time</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">"Found element after </span><span class="si">{}</span><span class="s2"> loops in </span><span class="si">{}</span><span class="s2"> microseconds"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">total_time</span><span class="p">))</span> <span class="c1"># prints the results</span>
-            <span class="k">return</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"Your number was found at"</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
-            
-    <span class="n">end_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">perf_counter_ns</span><span class="p">()</span> <span class="c1"># records the time again</span>
-    <span class="n">total_time</span> <span class="o">=</span> <span class="p">(</span><span class="n">end_time</span> <span class="o">-</span> <span class="n">start_time</span><span class="p">)</span> <span class="o">//</span> <span class="mi">1000</span> <span class="c1"># subtracts last recorded time and first recorded time</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Element not found after </span><span class="si">{}</span><span class="s2"> loops in </span><span class="si">{}</span><span class="s2"> microseconds"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">),</span> <span class="n">total_time</span><span class="p">))</span> <span class="c1"># prints the results</span>
-    <span class="k">return</span> <span class="s2">"Your number wasn't found :("</span>
-
-
-<span class="n">lst</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10001</span><span class="p">))</span> <span class="c1"># list with numbers 1-10000</span>
-
-<span class="n">x</span> <span class="o">=</span> <span class="mi">5000</span> <span class="c1"># replace with an integer between 1 and 10000 (I suggest big numbers like 500, 2000, so on)</span>
-
-<span class="n">linear_search</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="c1"># runs procedure</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://github.com/T-Dev-CCM/Fastpage-setup/blob/master/images/Screenshot%20(252" alt="">.png?raw=true)
+<img src="https://github.com/T-Dev-CCM/Fastpage-setup/blob/master/images/Screenshot%20(253" alt="">.png?raw=true)</p>
 
 </div>
-    
-
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -542,6 +513,60 @@ False
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> <span class="c1">#Goes on forever AND solves the problem of how long it will take a being travelling on a 3d plane </span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">nights</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">turn</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">stopped</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">turns</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="n">nights</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">):</span>
+    <span class="n">step</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">step</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span>
+    <span class="k">if</span> <span class="n">step</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">-</span><span class="mi">1</span>
+    <span class="k">if</span> <span class="n">step</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="o">+</span><span class="mi">1</span>
+    <span class="k">if</span> <span class="n">step</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="o">-</span><span class="mi">1</span>
+
+    <span class="n">turn</span> <span class="o">=</span> <span class="n">turn</span> <span class="o">+</span> <span class="mi">1</span>
+
+    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">nights</span> <span class="o">=</span> <span class="n">nights</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"The Man Has Made It Home After "</span><span class="p">,</span> <span class="n">turn</span><span class="p">,</span> <span class="s2">"Turns"</span><span class="p">)</span>
+        <span class="n">turns</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">turn</span><span class="p">)</span>
+        <span class="n">turn</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">if</span> <span class="n">turn</span><span class="o">/</span><span class="mi">1000</span> <span class="o">%</span> <span class="mi">1000</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"("</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span> <span class="s2">")"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">turn</span> <span class="o">&gt;</span> <span class="mi">10000000</span><span class="p">):</span>
+        <span class="n">stopped</span> <span class="o">=</span> <span class="n">stopped</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="n">turn</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">nights</span> <span class="o">=</span> <span class="n">nights</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Caped"</span><span class="p">)</span>
+
+<span class="n">average</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">turns</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">turns</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Avaerage"</span><span class="p">,</span> <span class="n">average</span><span class="p">,</span> <span class="s2">"Ones that when't too long "</span><span class="p">,</span> <span class="n">stopped</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
