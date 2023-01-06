@@ -9,7 +9,7 @@ title: Week 17 Collegeboard Grading
 
 
 
-| Sample 1  | Purpose: 0/1 | Data Abstraction: 1/1 | Managing Complexity: 0/1 | Procedural Abstraction: 1/1 | Algorithm Implementation: 1/1 | Testing: 1/1 | Total Grade: 6/6 | 
+| Sample 1  | Purpose: 0/1 | Data Abstraction: 1/1 | Managing Complexity: 0/1 | Procedural Abstraction: 1/1 | Algorithm Implementation: 1/1 | Testing: 1/1 | Total Grade: 4/6 | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |   
 | Sample 2  | Purpose: 1/1  | Data Abstraction: 1/1 | Managing Complexity: 1/1| Procedural Abstraction: 1/1 | Algorithm Implementation: 1/1  | Testing: 1/1 | Total Grade 6/6 |  
 
