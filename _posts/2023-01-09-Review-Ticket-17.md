@@ -16,16 +16,18 @@ title: Review Ticket 17
 
 # Our Roles/Responsibilities
 
-- Devon: 
+- Devon: Backend, code our website to perform its functions
 
 - Jeffery: Devops. Deploy code snd set up toolkits 
 
 - Trey: Frontend. Make and design a home page and layout for our stories 
 
-- Jonathan: 
+- Jonathan: Scrum Master: Assign tasks and help/monitor everyone's progress
 
-- Abdullah:
+- Abdullah: Flexible, do any position he can to help
 
 # Collegeboard Grading 
 
-- We were assigned the task of grading 2 programs using the collegeboard rubric.From using it and seeing how it works, I will use it to make sure any personal things I do will hit a majority of those marks on the rubric to ensure I get a good grade on my homework, projects, and individual tasks
+- We were assigned the task of grading 2 programs using the collegeboard rubric.From using it and seeing how it works, I will use it to make sure any personal things I do will hit a majority of those marks on the rubric to ensure I get a good grade on my homework, projects, and individual tasks 
+
+- link: https://t-dev-ccm.github.io/Fastpage-setup/markdown/2023/01/05/CollegeBoard-Grading.html
