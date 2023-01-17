@@ -4,7 +4,7 @@ layout: post
 comments: true
 description: Reunion Project + CPT preparation
 categories: [markdown]
-title: Review Ticket 17
+title: Review Ticket 18
 ---   
 
 Grading:github.io/Fastpage-setup/markdown/2023/01/13/Bc-grading.html 
