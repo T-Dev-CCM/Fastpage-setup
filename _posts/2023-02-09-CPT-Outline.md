@@ -14,7 +14,7 @@ title: Collegeboard Writen Report
 
 # Category 2: Data Abstraction 
 
-![](https://github.com/T-Dev-CCM/Fastpage-setup/blob/master/images/Screenshot%20(284).png?raw=true)
+![](https://github.com/T-Dev-CCM/Fastpage-setup/blob/master/images/Screenshot%20(301).png?raw=true)
 
 - My code shown here is a database used to store the data (in this instance email) It calls on an API and all necessary data from it, and identifies the name of the variable as email, and the data stored in it will be the email itself. 
 
@@ -24,7 +24,7 @@ title: Collegeboard Writen Report
 
 # Category 4: Procedural Abstraction 
 
-![](image.png) 
+![](https://github.com/T-Dev-CCM/Fastpage-setup/blob/master/images/Screenshot%20(302).png?raw=true) 
 
 - The Procedure for this line of code is that it imports the user and defines an API with a blueprint that requests, gets, and then detects if there is a UID and password, if there aren't it makes one. 
 
