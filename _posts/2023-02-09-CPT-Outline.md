@@ -34,4 +34,10 @@ title: Collegeboard Writen Report
 
 # Category 6: Testing 
 
-- TBD
+- 1st Call: For test one, I put in my email in the textbox when asked to and it was inserted into the database 
+
+- 2nd Call: I put in a different email (of mine) and that one was put in the database separately from the first one 
+
+Condition of Calls: The api and database checked to make sure that the email was different from the previous one 
+
+Results: Both emails were put into the database seprately 
